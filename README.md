@@ -33,21 +33,24 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 **Python**, **MNE**, **NumPy/Pandas**, **Scikit-learn**, **TensorFlow/Keras**, **SHAP**, **Matplotlib**
 
 ## 📂 Project Structure
-
+```
 EEG-MultiScale-CNN-SHAP/
 ├─ notebooks/
-│ ├─ 01_preprocess_and_features.ipynb
-│ ├─ 02_train_baselines.ipynb
-│ └─ 03_train_mscnn_and_shap.ipynb
+│  ├─ 01_preprocess_and_features.ipynb
+│  ├─ 02_train_baselines.ipynb
+│  └─ 03_train_mscnn_and_shap.ipynb
 ├─ results/
-│ ├─ confusion_matrix.png
-│ ├─ training_curves.png
-│ ├─ shap_summary.png
-│ ├─ shap_class0.png
-│ ├─ shap_class1.png
-│ └─ shap_class2.png
+│  ├─ confusion_matrix.png
+│  ├─ training_curves.png
+│  ├─ shap_summary.png
+│  ├─ shap_class0.png
+│  ├─ shap_class1.png
+│  └─ shap_class2.png
 ├─ requirements.txt
 └─ README.md
+```
+
+
 
 ## ▶️ Quick Start
 1) Create a virtual env and install deps:
