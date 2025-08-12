@@ -32,7 +32,7 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 ## 🛠 Tech Stack
 **Python**, **MNE**, **NumPy/Pandas**, **Scikit-learn**, **TensorFlow/Keras**, **SHAP**, **Matplotlib**
 
-## 📂 Project Structure
+## ​ Project Structure
 ```
 EEG-MultiScale-CNN-SHAP/
 ├─ notebooks/
@@ -52,11 +52,13 @@ EEG-MultiScale-CNN-SHAP/
 
 
 
+
 ## ▶️ Quick Start
 1) Create a virtual env and install deps:
 
-python -m venv .venv && source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+```bash
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt 
 
 2) Open the notebooks in /notebooks in order (01 → 03).
 
