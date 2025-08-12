@@ -111,4 +111,15 @@ git add requirements.txt README.md
 git commit -m "docs: add full README and requirements"
 git push
 
+## 🔎 Quick Preview
+
+<p align="center">
+  <img src="results/confusion_matrix.png" width="420" />
+  <img src="results/training_curves.png" width="420" />
+</p>
+
+<p align="center">
+  <img src="results/shap_summary.png" width="420" />
+</p>
+
 
