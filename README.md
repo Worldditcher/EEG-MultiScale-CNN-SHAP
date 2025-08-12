@@ -33,3 +33,74 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 **Python**, **MNE**, **NumPy/Pandas**, **Scikit-learn**, **TensorFlow/Keras**, **SHAP**, **Matplotlib**
 
 ## 📂 Project Structure
+
+EEG-MultiScale-CNN-SHAP/
+├─ notebooks/
+│ ├─ 01_preprocess_and_features.ipynb
+│ ├─ 02_train_baselines.ipynb
+│ └─ 03_train_mscnn_and_shap.ipynb
+├─ results/
+│ ├─ confusion_matrix.png
+│ ├─ accuracy_curve.png
+│ └─ shap_summary.png
+├─ requirements.txt
+└─ README.md
+
+## ▶️ Quick Start
+1) Create a virtual env and install deps:
+
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+2) Open the notebooks in /notebooks in order (01 → 03).
+
+3) Place your raw data where the notebook expects it (update paths in the first cell).
+
+4) Export plots to /results from the notebooks.
+
+🖼 Key Figures
+• results/confusion_matrix.png — test performance overview
+
+• results/accuracy_curve.png — training/validation accuracy vs epochs
+
+• results/shap_summary.png — global feature importance (SHAP)
+
+✅ Notes
+• No subject leakage (per-subject splits)
+
+• Reproducible seeds set for training & feature extraction
+
+• Clear separation of Check → Apply → Visualize steps per preprocessing block
+
+📢 Status
+• Core pipeline complete.
+
+• TODO: Add cross-validation results & per-class metrics.
+
+• TODO: Upload a minimal sample of preprocessed epochs (if licensing permits) to ease reproduction.
+
+📜 License
+This repo is for academic/educational use. Follow PhysioNet terms for original data.
+
+---
+
+# Step 3: Add `requirements.txt`
+
+Create a file named **requirements.txt** with this minimal set:
+numpy
+pandas
+scikit-learn
+mne
+matplotlib
+tensorflow
+shap
+pywavelets
+
+
+Commit & push:
+```bash
+git add requirements.txt README.md
+git commit -m "docs: add full README and requirements"
+git push
+
+
