@@ -27,7 +27,7 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 
 ## 📈 Results
 - MSCNN test accuracy: **77.92%**  
-- Visuals (see `/results`): confusion matrix, accuracy curve, SHAP summary
+- Visuals (see `/results`): confusion matrix, training curve, SHAP summary
 
 ## 🛠 Tech Stack
 **Python**, **MNE**, **NumPy/Pandas**, **Scikit-learn**, **TensorFlow/Keras**, **SHAP**, **Matplotlib**
@@ -36,13 +36,10 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 ```
 EEG-MultiScale-CNN-SHAP/
 ├─ notebooks/
-│  ├─ 01_preprocess_and_features.ipynb
-│  ├─ 02_train_baselines.ipynb
-│  └─ 03_train_mscnn_and_shap.ipynb
+│  ├─ EGG_SHAP.ipynb
 ├─ results/
 │  ├─ confusion_matrix.png
 │  ├─ training_curves.png
-│  ├─ shap_summary.png
 │  ├─ shap_class0.png
 │  ├─ shap_class1.png
 │  └─ shap_class2.png
@@ -70,7 +67,7 @@ pip install -r requirements.txt
 🖼 Key Figures
 • results/confusion_matrix.png — test performance overview
 
-• results/accuracy_curve.png — training/validation accuracy vs epochs
+• results/training_curve.png — training/validation accuracy vs epochs
 
 • results/shap_summary.png — global feature importance (SHAP)
 
@@ -93,7 +90,6 @@ This repo is for academic/educational use. Follow PhysioNet terms for original d
 
 ---
 
-# Step 3: Add `requirements.txt`
 
 Create a file named **requirements.txt** with this minimal set:
 numpy
@@ -122,5 +118,6 @@ git push
 <p align="center">
   <img src="results/shap_summary.png" width="420" />
 </p>
+
 
 
