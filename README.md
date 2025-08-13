@@ -68,9 +68,14 @@ pip install -r requirements.txt
 🖼 Key Figures
 • results/confusion_matrix.png — test performance overview
 
-• results/training_curve.png — training/validation accuracy vs epochs
+• results/training_curves.png — training/validation accuracy vs epochs
 
-• results/shap_summary.png — global feature importance (SHAP)
+• results/shap_class0.png — global feature importance (SHAP)
+
+• results/shap_class1.png — global feature importance (SHAP)
+
+• results/shap_class2.png — global feature importance (SHAP)
+
 
 ✅ Notes
 • No subject leakage (per-subject splits)
