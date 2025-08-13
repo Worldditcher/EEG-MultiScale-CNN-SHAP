@@ -1,45 +1,57 @@
-# ---- Python ----
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.so
-*.pyd
-*.pyo
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
-.venv/
-venv/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
 env/
-ENV/
-pip-wheel-metadata/
-*.log
+venv/
 
-# ---- Jupyter ----
-.ipynb_checkpoints/
-*.nbconvert.ipynb
+# Data files (EEG datasets can be large)
+data/raw/
+data/processed/
+*.edf
+*.fif
+*.set
 
-# ---- OS cruft ----
+# Model files
+*.h5
+*.pkl
+models/
+checkpoints/
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# ---- Data (keep folder, ignore contents) ----
-data/
-!data/README.md
-
-# ---- Models / heavy artifacts ----
-models/
-checkpoints/
-artifacts/
-*.ckpt
-*.h5
-*.tflite
-*.onnx
-*.pt
-*.pth
-*.npz
-*.npy
-
-# ---- Editors / IDE ----
+# IDE files
 .vscode/
 .idea/
-
-# ---- Colab/runtime metadata (optional) ----
-.colab/
