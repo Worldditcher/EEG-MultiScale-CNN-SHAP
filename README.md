@@ -1,5 +1,46 @@
 # EEG Classification with Multi-Scale CNN & SHAP
 
+## Data & Quick Test (works locally or in Colab)
+
+We do **not** redistribute PhysioNet data.
+
+Use the boot block below in your notebook. It:
+- auto-detects Google Colab
+- sets `DATA_DIR`
+- downloads just **two public subjects** (S001, S002) from PhysioNet’s `eegmmidb` for a quick smoke test.
+
+```python
+import sys, os
+from pathlib import Path
+
+# Detect environment
+IN_COLAB = "google.colab" in sys.modules
+
+# Where to store data
+DATA_DIR = "/content/data/raw/sample_eegmmidb" if IN_COLAB else "data/raw/sample_eegmmidb"
+Path(DATA_DIR).mkdir(parents=True, exist_ok=True)
+
+# (Colab only) minimal deps
+if IN_COLAB:
+    %pip -q install wfdb mne pywavelets shap tensorflow==2.15.0
+
+# Ensure 2-subject sample exists (S001, S002)
+def ensure_sample(subjects=("S001","S002")):
+    try:
+        from wfdb import dl_database
+    except Exception as e:
+        raise RuntimeError("wfdb not installed. Run `pip install wfdb` or install requirements.") from e
+
+    for s in subjects:
+        subj_dir = Path(DATA_DIR) / s
+        if not subj_dir.exists() or not list(subj_dir.rglob("*.edf")):
+            print(f"Downloading {s} ...")
+            dl_database("eegmmidb", pn_dir=f"eegmmidb/{s}", dl_dir=str(subj_dir),
+                        keep_subdirs=True, overwrite=False)
+    print("Data ready at:", Path(DATA_DIR).resolve())
+
+ensure_sample()
+
 ## 📌 Overview
 This project classifies EEG signals using a **Multi-Scale Convolutional Neural Network (MSCNN)** and explains predictions with **SHAP** for transparency in healthcare use cases.
 
