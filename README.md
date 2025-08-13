@@ -36,7 +36,7 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 ```
 EEG-MultiScale-CNN-SHAP/
 ├─ notebooks/
-│  ├─ EGG_SHAP.ipynb
+│  ├─ EEG_SHAP.ipynb
 ├─ results/
 │  ├─ confusion_matrix.png
 │  ├─ training_curves.png
