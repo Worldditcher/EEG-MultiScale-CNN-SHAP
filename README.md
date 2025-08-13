@@ -73,6 +73,10 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 ## 🛠 Tech Stack
 **Python**, **MNE**, **NumPy/Pandas**, **Scikit-learn**, **TensorFlow/Keras**, **SHAP**, **Matplotlib**
 
+
+
+
+
 ## 📂 Project Structure
 ```
 EEG-MultiScale-CNN-SHAP/
@@ -87,10 +91,6 @@ EEG-MultiScale-CNN-SHAP/
 ├─ requirements.txt
 └─ README.md
 ```
-
-
-
-
 
 ## ▶️ Quick Start
 
