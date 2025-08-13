@@ -163,7 +163,10 @@ git push
 </p>
 
 <p align="center">
-  <img src="results/shap_summary.png" width="420" />
+ <img src="results/shap_class0.png" width="420" />
+ <img src="results/shap_class1.png" width="420" />
+ <img src="results/shap_class2.png" width="420" />
+
 </p>
 
 
