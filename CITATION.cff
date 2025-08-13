@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "EEG-MultiScale-CNN-SHAP: Multi-Scale CNN for EEG classification with SHAP explainability"
+authors:
+  - family-names: "K."
+    given-names: "Ritik"
+version: "0.1.0"
+date-released: "2025-08-13"
+repository-code: "https://github.com/Worldditcher/EEG-MultiScale-CNN-SHAP"
+abstract: >
+  End-to-end pipeline for EEG classification using a Multi-Scale CNN with
+  SHAP-based post-hoc explainability. Includes preprocessing steps, training
+  notebooks, and per-class global SHAP importance plots.
+license: "MIT"
+keywords:
+  - EEG
+  - deep learning
+  - CNN
+  - SHAP
+  - explainable AI
+  - BCI
+  - healthcare
+preferred-citation:
+  type: software
+  title: "EEG-MultiScale-CNN-SHAP"
+  authors:
+    - family-names: "K."
+      given-names: "Ritik"
+  year: 2025
+  url: "https://github.com/Worldditcher/EEG-MultiScale-CNN-SHAP"
