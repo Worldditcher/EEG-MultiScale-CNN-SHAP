@@ -1,0 +1,45 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.log
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+
+# ---- Data (keep folder, ignore contents) ----
+data/
+!data/README.md
+
+# ---- Models / heavy artifacts ----
+models/
+checkpoints/
+artifacts/
+*.ckpt
+*.h5
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.npz
+*.npy
+
+# ---- Editors / IDE ----
+.vscode/
+.idea/
+
+# ---- Colab/runtime metadata (optional) ----
+.colab/
