@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
 title: "EEG-MultiScale-CNN-SHAP: Multi-Scale CNN for EEG classification with SHAP explainability"
 authors:
-  - family-names: "K."
+  - family-names: "Kumar"
     given-names: "Ritik"
 version: "0.1.0"
 date-released: "2025-08-13"
