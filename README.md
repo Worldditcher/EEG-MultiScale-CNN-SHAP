@@ -11,7 +11,7 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 
 - Problem: Movement intention/EEG pattern classification with clinically useful explanations  
 - Approach: Clean & segment EEG → extract multi-domain features → train MSCNN → interpret with SHAP  
-- Result: **77.92% accuracy** on ~9,258 augmented epochs; MSCNN outperformed SVM/RF baselines by **6–10%**
+- Result: **77.92% accuracy** on ~9,258 augmented epochs
 
 ## 🧠 Dataset
 - Source: **PhysioNet EEG** (109 subjects; Sharbrough/64-channel montage)  
@@ -66,7 +66,7 @@ EEG-MultiScale-CNN-SHAP/
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt 
 
-2) Open the notebooks in /notebooks in order (01 → 03).
+2) Open the notebooks in /notebooks .
 
 3) Place your raw data where the notebook expects it (update paths in the first cell).
 
