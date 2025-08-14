@@ -78,10 +78,10 @@ This project classifies EEG signals using a **Multi-Scale Convolutional Neural N
 
 
 ## 📂 Project Structure
-```
+```text
 EEG-MultiScale-CNN-SHAP/
 ├─ notebooks/
-│  ├─ EEG_SHAP.ipynb
+│  └─ EEG_SHAP.ipynb
 ├─ results/
 │  ├─ confusion_matrix.png
 │  ├─ training_curves.png
@@ -91,6 +91,7 @@ EEG-MultiScale-CNN-SHAP/
 ├─ requirements.txt
 └─ README.md
 ```
+
 
 ## ▶️ Quick Start
 
@@ -126,11 +127,9 @@ pip install -r requirements.txt
 • Clear separation of Check → Apply → Visualize steps per preprocessing block
 
 📢 Status
-• Core pipeline complete.
-
-• TODO: Add cross-validation results & per-class metrics.
-
-• TODO: Upload a minimal sample of preprocessed epochs (if licensing permits) to ease reproduction.
+• Core pipeline complete (full dataset run with per-subject splits and reproducible seeds).
+• Cross-validation implemented in code.
+• Per-class metrics (precision, recall, F1) not computed due to compute constraints — can be added in future work.
 
 📜 License
 This repo is for academic/educational use. Follow PhysioNet terms for original data.
